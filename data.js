@@ -1,30 +1,18 @@
 // Temporary Data file in JS. Will be later converted to JSON or Firebase Database
+/*
+var properties = [
+  name,
+  symbol,
+  Electronic Configuration,
+  Period, // G
+  Group, // G
+  Block, // G
+  Shell-wise Electronic Configuration, // G
+  type,
+  mass
+]
 
-var propertyKeys = {
-  a: "Name",
-  b: "Symbol",
-  c: "Electronic Configuration",
-  d: "Period", // 𝐺
-  e: "Group", // 𝐺
-  f: "Block", // 𝐺
-  g: "Shell-wise Electronic Configuration", // 𝐺
-  h: "Type",
-  i: "Mass"
-}
 
-var typeKeys = {
-  α: "Nonmetal",
-  β: "Noble Gas",
-  γ: "Alkali Metals",
-  θ: "Alkaline Earth Metals",
-  η: "Metalloid",
-  σ: "Halogen",
-  τ: "Post Transition Metals",
-  ζ: "Transition Metals",
-  ϕ: "Actinoid",
-  μ: "Lanthanoid"
-}
-/**
  * [Atomic number]: {
  *   [prop1]: [v1],
  *   [prop2]: [v2],
@@ -34,711 +22,711 @@ var typeKeys = {
  */
 var Data = {
   1: {
-    a: "Hydrogen",
-    b: "H",
-    h: α,
-    i: 1.0079
+    name  : "Hydrogen",
+    symbol: "H",
+    type  : "Nonmetals",
+    mass  : 1.0079
   },
   2: {
-    a: "Helium",
-    b: "He",
-    h: β,
-    i: 4.00260
+    name  : "Helium",
+    symbol: "He",
+    type  : "Noble Gas",
+    mass  : 4.00260
   },
   3: {
-    a: "Lithium",
-    b: "Li",
-    h: γ,
-    i: 6.941
+    name  : "Lithium",
+    symbol: "Li",
+    type  : "Alkali metal",
+    mass  : 6.941
   },
   4: {
-    a: "Beryllium",
-    b: "Be",
-    h: θ,
-    i: 4.00260
+    name  : "Beryllium",
+    symbol: "Be",
+    type  : "Alkaline Earth Metal",
+    mass  : 4.00260
   },
   5: {
-    a: "Boron",
-    b: "B",
-    h: η,
-    i: 10.811
+    name  : "Boron",
+    symbol: "B",
+    type  : "Metalloid",
+    mass  : 10.811
   },
   6: {
-    a: "Carbon",
-    b: "C",
-    h: α,
-    i: 12.011
+    name  : "Carbon",
+    symbol: "C",
+    type  : "Nonmetals",
+    mass  : 12.011
   },
   7: {
-    a: "Nitrogen",
-    b: "N",
-    h: α,
-    i: 14.0067
+    name  : "Nitrogen",
+    symbol: "N",
+    type  : "Nonmetals",
+    mass  : 14.0067
   },
   8: {
-    a: "Oxygen",
-    b: "O",
-    h: α,
-    i: 15.9993
+    name  : "Oxygen",
+    symbol: "O",
+    type  : "Nonmetals",
+    mass  : 15.9993
   },
   9: {
-    a: "Fluorine",
-    b: "F",
-    h: σ,
-    i: 18.9984
+    name  : "Fluorine",
+    symbol: "F",
+    type  : "Halogen",
+    mass  : 18.9984
   },
   10: {
-    a: "Neon",
-    b: "Ne",
-    h: β,
-    i: 20.1797
+    name  : "Neon",
+    symbol: "Ne",
+    type  : "Noble Gas",
+    mass  : 20.1797
   },
   11: {
-    a: "Sodium",
-    b: "Na",
-    h: γ,
-    i: 22.989768
+    name  : "Sodium",
+    symbol: "Na",
+    type  : "Alkali metal",
+    mass  : 22.989768
   },
   12: {
-    a: "Magnesium",
-    b: "Mg",
-    h: θ,
-    i: 24.305
+    name  : "Magnesium",
+    symbol: "Mg",
+    type  : "Alkaline Earth Metal",
+    mass  : 24.305
   },
   13: {
-    a: "Aluminum",
-    b: "Al",
-    h: τ,
-    i: 26.981539
+    name  : "Aluminum",
+    symbol: "Al",
+    type  : "Post Transition Metal",
+    mass  : 26.981539
   },
   14: {
-    a: "Silicon",
-    b: "Si",
-    h: η,
-    i: 28.0855
+    name  : "Silicon",
+    symbol: "Si",
+    type  : "Metalloid",
+    mass  : 28.0855
   },
   15: {
-    a: "Phosphorus",
-    b: "P",
-    h: α,
-    i: 30.973762
+    name  : "Phosphorus",
+    symbol: "P",
+    type  : "Nonmetals",
+    mass  : 30.973762
   },
   16: {
-    a: "Sulphur",
-    b: "S",
-    h: α,
-    i: 32.066
+    name  : "Sulphur",
+    symbol: "S",
+    type  : "Nonmetals",
+    mass  : 32.066
   },
   17: {
-    a: "Chlorine",
-    b: "Cl",
-    h: σ,
-    i: 35.4527
+    name  : "Chlorine",
+    symbol: "Cl",
+    type  : "Halogen",
+    mass  : 35.4527
   },
   18: {
-    a: "Argon",
-    b: "Ar",
-    h: β,
-    i: 39.948
+    name  : "Argon",
+    symbol: "Ar",
+    type  : "Noble Gas",
+    mass  : 39.948
   },
   19: {
-    a: "Potassium",
-    b: "K",
-    h: γ,
-    i: 39.0983
+    name  : "Potassium",
+    symbol: "K",
+    type  : "Alkali metal",
+    mass  : 39.0983
   },
   20: {
-    a: "Calcium",
-    b: "Ca",
-    h: θ,
-    i: 40.078
+    name  : "Calcium",
+    symbol: "Ca",
+    type  : "Alkaline Earth Metal",
+    mass  : 40.078
   },
   21: {
-    a: "Scandium",
-    b: "Sc",
-    h: ζ,
-    i: 44.95591
+    name  : "Scandium",
+    symbol: "Sc",
+    type  : "Transition Metal",
+    mass  : 44.95591
   },
   22: {
-    a: "Titanium",
-    b: "Ti",
-    h: ζ,
-    i: 47.88
+    name  : "Titanium",
+    symbol: "Ti",
+    type  : "Transition Metal",
+    mass  : 47.88
   },
   23: {
-    a: "Vanadium",
-    b: "V",
-    h: ζ,
-    i: 50.9415
+    name  : "Vanadium",
+    symbol: "V",
+    type  : "Transition Metal",
+    mass  : 50.9415
   },
   24: {
-    a: "Chromium",
-    b: "Cr",
-    h: ζ,
-    i: 51.9961
+    name  : "Chromium",
+    symbol: "Cr",
+    type  : "Transition Metal",
+    mass  : 51.9961
   },
   25: {
-    a: "Manganese",
-    b: "Mn",
-    h: ζ,
-    i: 54.938
+    name  : "Manganese",
+    symbol: "Mn",
+    type  : "Transition Metal",
+    mass  : 54.938
   },
   26: {
-    a: "Iron",
-    b: "Fe",
-    h: ζ,
-    i: 55.847
+    name  : "Iron",
+    symbol: "Fe",
+    type  : "Transition Metal",
+    mass  : 55.847
   },
   27: {
-    a: "Cobalt",
-    b: "Co",
-    h: ζ,
-    i: 58.9332
+    name  : "Cobalt",
+    symbol: "Co",
+    type  : "Transition Metal",
+    mass  : 58.9332
   },
   28: {
-    a: "Nickel",
-    b: "Ni",
-    h: ζ,
-    i: 58.6934
+    name  : "Nickel",
+    symbol: "Ni",
+    type  : "Transition Metal",
+    mass  : 58.6934
   },
   29: {
-    a: "Copper",
-    b: "Cu",
-    h: ζ,
-    i: 63.546
+    name  : "Copper",
+    symbol: "Cu",
+    type  : "Transition Metal",
+    mass  : 63.546
   },
   30: {
-    a: "Zinc",
-    b: "Zn",
-    h: ζ,
-    i: 65.29
+    name  : "Zinc",
+    symbol: "Zn",
+    type  : "Transition Metal",
+    mass  : 65.29
   },
   31: {
-    a: "Gallium",
-    b: "Ga",
-    h: τ,
-    i: 69.732
+    name  : "Gallium",
+    symbol: "Ga",
+    type  : "Post Transition Metal",
+    mass  : 69.732
   },
   32: {
-    a: "Germanium",
-    b: "Ge",
-    h: η,
-    i: 73.64
+    name  : "Germanium",
+    symbol: "Ge",
+    type  : "Metalloid",
+    mass  : 73.64
   },
   33: {
-    a: "Arsenic",
-    b: "As",
-    h: η,
-    i: 74.92159
+    name  : "Arsenic",
+    symbol: "As",
+    type  : "Metalloid",
+    mass  : 74.92159
   },
   34: {
-    a: "Selenium",
-    b: "Se",
-    h: α,
-    i: 78.96
+    name  : "Selenium",
+    symbol: "Se",
+    type  : "Nonmetals",
+    mass  : 78.96
   },
   35: {
-    a: "Bromine",
-    b: "Br",
-    h: σ,
-    i: 79.904
+    name  : "Bromine",
+    symbol: "Br",
+    type  : "Halogen",
+    mass  : 79.904
   },
   36: {
-    a: "Krypton",
-    b: "Kr",
-    h: β,
-    i: 83.80
+    name  : "Krypton",
+    symbol: "Kr",
+    type  : "Noble Gas",
+    mass  : 83.80
   },
   37: {
-    a: "Rubidium",
-    b: "Rb",
-    h: γ,
-    i: 85.4678
+    name  : "Rubidium",
+    symbol: "Rb",
+    type  : "Alkali metal",
+    mass  : 85.4678
   },
   38: {
-    a: "Strontium",
-    b: "Sr",
-    h: θ,
-    i: 87.62
+    name  : "Strontium",
+    symbol: "Sr",
+    type  : "Alkaline Earth Metal",
+    mass  : 87.62
   },
   39: {
-    a: "Yttrium",
-    b: "Y",
-    h: ζ,
-    i: 88.90585
+    name  : "Yttrium",
+    symbol: "Y",
+    type  : "Transition Metal",
+    mass  : 88.90585
   },
   40: {
-    a: "Zirconium",
-    b: "Zr",
-    h: ζ,
-    i: 91.224
+    name  : "Zirconium",
+    symbol: "Zr",
+    type  : "Transition Metal",
+    mass  : 91.224
   },
   41: {
-    a: "Niobium",
-    b: "Nb",
-    h: ζ,
-    i: 92.90638
+    name  : "Niobium",
+    symbol: "Nb",
+    type  : "Transition Metal",
+    mass  : 92.90638
   },
   42: {
-    a: "Molybdenum",
-    b: "Mo",
-    h: ζ,
-    i: 95.94
+    name  : "Molybdenum",
+    symbol: "Mo",
+    type  : "Transition Metal",
+    mass  : 95.94
   },
   43: {
-    a: "Technetium",
-    b: "Tc",
-    h: ζ,
-    i: 98.9072
+    name  : "Technetium",
+    symbol: "Tc",
+    type  : "Transition Metal",
+    mass  : 98.9072
   },
   44: {
-    a: "Ruthenium",
-    b: "Ru",
-    h: ζ,
-    i: 101.07
+    name  : "Ruthenium",
+    symbol: "Ru",
+    type  : "Transition Metal",
+    mass  : 101.07
   },
   45: {
-    a: "Rhodium",
-    b: "Rh",
-    h: ζ,
-    i: 102.9055
+    name  : "Rhodium",
+    symbol: "Rh",
+    type  : "Transition Metal",
+    mass  : 102.9055
   },
   46: {
-    a: "Palladium",
-    b: "Pd",
-    h: ζ,
-    i: 106.42
+    name  : "Palladium",
+    symbol: "Pd",
+    type  : "Transition Metal",
+    mass  : 106.42
   },
   47: {
-    a: "Silver",
-    b: "Ag",
-    h: ζ,
-    i: 107.8682
+    name  : "Silver",
+    symbol: "Ag",
+    type  : "Transition Metal",
+    mass  : 107.8682
   },
   48: {
-    a: "Cadmium",
-    b: "Cd",
-    h: ζ,
-    i: 112.411
+    name  : "Cadmium",
+    symbol: "Cd",
+    type  : "Transition Metal",
+    mass  : 112.411
   },
   49: {
-    a: "Indium",
-    b: "In",
-    h: τ,
-    i: 114.818
+    name  : "Indium",
+    symbol: "In",
+    type  : "Post Transition Metal",
+    mass  : 114.818
   },
   50: {
-    a: "Tin",
-    b: "Sn",
-    h: τ,
-    i: 118.71
+    name  : "Tin",
+    symbol: "Sn",
+    type  : "Post Transition Metal",
+    mass  : 118.71
   },
   51: {
-    a: "Antimony",
-    b: "Sb",
-    h: η,
-    i: 121.760
+    name  : "Antimony",
+    symbol: "Sb",
+    type  : "Metalloid",
+    mass  : 121.760
   },
   52: {
-    a: "Tellurium",
-    b: "Te",
-    h: η,
-    i: 127.6
+    name  : "Tellurium",
+    symbol: "Te",
+    type  : "Metalloid",
+    mass  : 127.6
   },
   53: {
-    a: "Iodine",
-    b: "I",
-    h: σ,
-    i: 126.90447
+    name  : "Iodine",
+    symbol: "I",
+    type  : "Halogen",
+    mass  : 126.90447
   },
   54: {
-    a: "Xenon",
-    b: "Xe",
-    h: β,
-    i: 131.29
+    name  : "Xenon",
+    symbol: "Xe",
+    type  : "Noble Gas",
+    mass  : 131.29
   },
   55: {
-    a: "Caesium",
-    b: "Cs",
-    h: γ,
-    i: 132.90543
+    name  : "Caesium",
+    symbol: "Cs",
+    type  : "Alkali metal",
+    mass  : 132.90543
   },
   56: {
-    a: "Barium",
-    b: "Ba",
-    h: θ,
-    i: 137.327
+    name  : "Barium",
+    symbol: "Ba",
+    type  : "Alkaline Earth Metal",
+    mass  : 137.327
   },
   57: {
-    a: "Lanthanum",
-    b: "La",
-    h: μ,
-    i: 138.9055
+    name  : "Lanthanum",
+    symbol: "La",
+    type  : "Lanthanoid",
+    mass  : 138.9055
   },
   58: {
-    a: "Corium",
-    b: "Ce",
-    h: μ,
-    i: 140.115
+    name  : "Corium",
+    symbol: "Ce",
+    type  : "Lanthanoid",
+    mass  : 140.115
   },
   59: {
-    a: "Praseodymium",
-    b: "Pr",
-    h: μ,
-    i: 140.90785
+    name  : "Praseodymium",
+    symbol: "Pr",
+    type  : "Lanthanoid",
+    mass  : 140.90785
   },
   60: {
-    a: "Neodymium",
-    b: "Nd",
-    h: μ,
-    i: 144.24
+    name  : "Neodymium",
+    symbol: "Nd",
+    type  : "Lanthanoid",
+    mass  : 144.24
   },
   61: {
-    a: "Promethium",
-    b: "Pm",
-    h: μ,
-    i: 144.9127
+    name  : "Promethium",
+    symbol: "Pm",
+    type  : "Lanthanoid",
+    mass  : 144.9127
   },
   62: {
-    a: "Samarium",
-    b: "Sm",
-    h: μ,
-    i: 150.36
+    name  : "Samarium",
+    symbol: "Sm",
+    type  : "Lanthanoid",
+    mass  : 150.36
   },
   63: {
-    a: "Europium",
-    b: "Eu",
-    h: μ,
-    i: 151.9655
+    name  : "Europium",
+    symbol: "Eu",
+    type  : "Lanthanoid",
+    mass  : 151.9655
   },
   64: {
-    a: "Gadolinium",
-    b: "Gd",
-    h: μ,
-    i: 157.25
+    name  : "Gadolinium",
+    symbol: "Gd",
+    type  : "Lanthanoid",
+    mass  : 157.25
   },
   65: {
-    a: "Terbium",
-    b: "Tb",
-    h: μ,
-    i: 158.92534
+    name  : "Terbium",
+    symbol: "Tb",
+    type  : "Lanthanoid",
+    mass  : 158.92534
   },
   66: {
-    a: "Dysprosium",
-    b: "Dy",
-    h: μ,
-    i: 162.50
+    name  : "Dysprosium",
+    symbol: "Dy",
+    type  : "Lanthanoid",
+    mass  : 162.50
   },
   67: {
-    a: "Holmium",
-    b: "Ho",
-    h: μ,
-    i: 164.93421
+    name  : "Holmium",
+    symbol: "Ho",
+    type  : "Lanthanoid",
+    mass  : 164.93421
   },
   68: {
-    a: "Erbium",
-    b: "Er",
-    h: μ,
-    i: 167.26
+    name  : "Erbium",
+    symbol: "Er",
+    type  : "Lanthanoid",
+    mass  : 167.26
   },
   69: {
-    a: "Thulium",
-    b: "Tm",
-    h: μ,
-    i: 168.93421
+    name  : "Thulium",
+    symbol: "Tm",
+    type  : "Lanthanoid",
+    mass  : 168.93421
   },
   70: {
-    a: "Ytterbium",
-    b: "Yb",
-    h: μ,
-    i: 173.04
+    name  : "Ytterbium",
+    symbol: "Yb",
+    type  : "Lanthanoid",
+    mass  : 173.04
   },
   71: {
-    a: "Lutetium",
-    b: "Lu",
-    h: μ,
-    i: 174.967
+    name  : "Lutetium",
+    symbol: "Lu",
+    type  : "Lanthanoid",
+    mass  : 174.967
   },
   72: {
-    a: "Hafnium",
-    b: "Hf",
-    h: ζ,
-    i: 178.49
+    name  : "Hafnium",
+    symbol: "Hf",
+    type  : "Transition Metal",
+    mass  : 178.49
   },
   73: {
-    a: "Tantalum",
-    b: "Ta",
-    h: ζ,
-    i: 180.9479
+    name  : "Tantalum",
+    symbol: "Ta",
+    type  : "Transition Metal",
+    mass  : 180.9479
   },
   74: {
-    a: "Tungsten",
-    b: "W",
-    h: ζ,
-    i: 183.85
+    name  : "Tungsten",
+    symbol: "W",
+    type  : "Transition Metal",
+    mass  : 183.85
   },
   75: {
-    a: "Rhenium",
-    b: "Re",
-    h: ζ,
-    i: 186.207
+    name  : "Rhenium",
+    symbol: "Re",
+    type  : "Transition Metal",
+    mass  : 186.207
   },
   76: {
-    a: "Osmium",
-    b: "Os",
-    h: ζ,
-    i: 190.23
+    name  : "Osmium",
+    symbol: "Os",
+    type  : "Transition Metal",
+    mass  : 190.23
   },
   77: {
-    a: "Iridium",
-    b: "Ir",
-    h: ζ,
-    i: 192.22
+    name  : "Iridium",
+    symbol: "Ir",
+    type  : "Transition Metal",
+    mass  : 192.22
   },
   78: {
-    a: "Platinum",
-    b: "Pt",
-    h: ζ,
-    i: 185.08
+    name  : "Platinum",
+    symbol: "Pt",
+    type  : "Transition Metal",
+    mass  : 185.08
   },
   79: {
-    a: "Gold",
-    b: "Au",
-    h: ζ,
-    i: 196.9665
+    name  : "Gold",
+    symbol: "Au",
+    type  : "Transition Metal",
+    mass  : 196.9665
   },
   80: {
-    a: "Mercury",
-    b: "Hg",
-    h: ζ,
-    i: 200.59
+    name  : "Mercury",
+    symbol: "Hg",
+    type  : "Transition Metal",
+    mass  : 200.59
   },
   81: {
-    a: "Thallium",
-    b: "Ti",
-    h: τ,
-    i: 204.3833
+    name  : "Thallium",
+    symbol: "Ti",
+    type  : "Post Transition Metal",
+    mass  : 204.3833
   },
   82: {
-    a: "Lead",
-    b: "Pb",
-    h: τ,
-    i: 207.2
+    name  : "Lead",
+    symbol: "Pb",
+    type  : "Post Transition Metal",
+    mass  : 207.2
   },
   83: {
-    a: "Bismuth",
-    b: "Bi",
-    h: τ,
-    i: 208.98037
+    name  : "Bismuth",
+    symbol: "Bi",
+    type  : "Post Transition Metal",
+    mass  : 208.98037
   },
   84: {
-    a: "Polonium",
-    b: "Po",
-    h: η,
-    i: 208.9824
+    name  : "Polonium",
+    symbol: "Po",
+    type  : "Metalloid",
+    mass  : 208.9824
   },
   85: {
-    a: "Astatine",
-    b: "At",
-    h: σ,
-    i: 209.9871
+    name  : "Astatine",
+    symbol: "At",
+    type  : "Halogen",
+    mass  : 209.9871
   },
   86: {
-    a: "Radon",
-    b: "Rn",
-    h: β,
-    i: 222.0176
+    name  : "Radon",
+    symbol: "Rn",
+    type  : "Noble Gas",
+    mass  : 222.0176
   },
   87: {
-    a: "Francium",
-    b: "Fr",
-    h: γ,
-    i: 223.0197
+    name  : "Francium",
+    symbol: "Fr",
+    type  : "Alkali metal",
+    mass  : 223.0197
   },
   88: {
-    a: "Radium",
-    b: "Ra",
-    h: θ,
-    i: 226.0254
+    name  : "Radium",
+    symbol: "Ra",
+    type  : "Alkaline Earth Metal",
+    mass  : 226.0254
   },
   89: {
-    a: "Actinium",
-    b: "Ac",
-    h: ϕ,
-    i: 227.0278
+    name  : "Actinium",
+    symbol: "Ac",
+    type  : "Actinoid",
+    mass  : 227.0278
   },
   90: {
-    a: "Thorium",
-    b: "Th",
-    h: ϕ,
-    i: 232.0381
+    name  : "Thorium",
+    symbol: "Th",
+    type  : "Actinoid",
+    mass  : 232.0381
   },
   91: {
-    a: "Protactinium",
-    b: "Pa",
-    h: ϕ,
-    i: 231.03588
+    name  : "Protactinium",
+    symbol: "Pa",
+    type  : "Actinoid",
+    mass  : 231.03588
   },
   92: {
-    a: "Uranium",
-    b: "U",
-    h: ϕ,
-    i: 238.0289
+    name  : "Uranium",
+    symbol: "U",
+    type  : "Actinoid",
+    mass  : 238.0289
   },
   93: {
-    a: "Neptunium",
-    b: "Np",
-    h: ϕ,
-    i: 243.0614
+    name  : "Neptunium",
+    symbol: "Np",
+    type  : "Actinoid",
+    mass  : 243.0614
   },
   94: {
-    a: "Plutonium",
-    b: "Pu",
-    h: ϕ,
-    i: 247.0703
+    name  : "Plutonium",
+    symbol: "Pu",
+    type  : "Actinoid",
+    mass  : 247.0703
   },
   95: {
-    a: "Americium",
-    b: "Am",
-    h: ϕ,
-    i: 243.0614
+    name  : "Americium",
+    symbol: "Am",
+    type  : "Actinoid",
+    mass  : 243.0614
   },
   96: {
-    a: "Curium",
-    b: "Cm",
-    h: ϕ,
-    i: 247.0703
+    name  : "Curium",
+    symbol: "Cm",
+    type  : "Actinoid",
+    mass  : 247.0703
   },
   97: {
-    a: "Berkelium",
-    b: "Bk",
-    h: ϕ,
-    i: 247.0703
+    name  : "Berkelium",
+    symbol: "Bk",
+    type  : "Actinoid",
+    mass  : 247.0703
   },
   98: {
-    a: "Californium",
-    b: "Cf",
-    h: ϕ,
-    i: 251.0796
+    name  : "Californium",
+    symbol: "Cf",
+    type  : "Actinoid",
+    mass  : 251.0796
   },
   99: {
-    a: "Einsteinium",
-    b: "Es",
-    h: ϕ,
-    i: 254
+    name  : "Einsteinium",
+    symbol: "Es",
+    type  : "Actinoid",
+    mass  : 254
   },
   100: {
-    a: "Fermium",
-    b: "Fm",
-    h: ϕ,
-    i: 257.0951
+    name  : "Fermium",
+    symbol: "Fm",
+    type  : "Actinoid",
+    mass  : 257.0951
   },
   101: {
-    a: "Mendelevium",
-    b: "Md",
-    h: ϕ,
-    i: 258.1
+    name  : "Mendelevium",
+    symbol: "Md",
+    type  : "Actinoid",
+    mass  : 258.1
   },
   102: {
-    a: "Nobelium",
-    b: "No",
-    h: ϕ,
-    i: 259.1009
+    name  : "Nobelium",
+    symbol: "No",
+    type  : "Actinoid",
+    mass  : 259.1009
   },
   103: {
-    a: "Lawrencium",
-    b: "Lr",
-    h: ϕ,
-    i: 262
+    name  : "Lawrencium",
+    symbol: "Lr",
+    type  : "Actinoid",
+    mass  : 262
   },
   104: {
-    a: "Rutherfordium",
-    b: "Rf",
-    h: ζ,
-    i: 261
+    name  : "Rutherfordium",
+    symbol: "Rf",
+    type  : "Transition Metal",
+    mass  : 261
   },
   105: {
-    a: "Dubnium",
-    b: "Db",
-    h: ζ,
-    i: 262
+    name  : "Dubnium",
+    symbol: "Db",
+    type  : "Transition Metal",
+    mass  : 262
   },
   106: {
-    a: "Seaborgium",
-    b: "Sg",
-    h: ζ,
-    i: 266
+    name  : "Seaborgium",
+    symbol: "Sg",
+    type  : "Transition Metal",
+    mass  : 266
   },
   107: {
-    a: "Bohrium",
-    b: "Bh",
-    h: ζ,
-    i: 264
+    name  : "Bohrium",
+    symbol: "Bh",
+    type  : "Transition Metal",
+    mass  : 264
   },
   108: {
-    a: "Hassium",
-    b: "Hs",
-    h: ζ,
-    i: 269
+    name  : "Hassium",
+    symbol: "Hs",
+    type  : "Transition Metal",
+    mass  : 269
   },
   109: {
-    a: "Meltnerium",
-    b: "Mt",
-    h: ζ,
-    i: 268
+    name  : "Meltnerium",
+    symbol: "Mt",
+    type  : "Transition Metal",
+    mass  : 268
   },
   110: {
-    a: "Darmstandtium",
-    b: "Ds",
-    h: ζ,
-    i: 269
+    name  : "Darmstandtium",
+    symbol: "Ds",
+    type  : "Transition Metal",
+    mass  : 269
   },
   111: {
-    a: "Roentgenlum",
-    b: "Rg",
-    h: ζ,
-    i: 272
+    name  : "Roentgenlum",
+    symbol: "Rg",
+    type  : "Transition Metal",
+    mass  : 272
   },
   112: {
-    a: "Copernicium",
-    b: "Cn",
-    h: ζ,
-    i: 277
+    name  : "Copernicium",
+    symbol: "Cn",
+    type  : "Transition Metal",
+    mass  : 277
   },
   113: {
-    a: "Nihonium",
-    b: "Nh",
-    h: τ,
-    i: 286
+    name  : "Nihonium",
+    symbol: "Nh",
+    type  : "Post Transition Metal",
+    mass  : 286
   },
   114: {
-    a: "Flerovium",
-    b: "Fl",
-    h: τ,
-    i: 289
+    name  : "Flerovium",
+    symbol: "Fl",
+    type  : "Post Transition Metal",
+    mass  : 289
   },
   115: {
-    a: "Moscovium",
-    b: "Mc",
-    h: τ,
-    i: 288
+    name  : "Moscovium",
+    symbol: "Mc",
+    type  : "Post Transition Metal",
+    mass  : 288
   },
   116: {
-    a: "Livermonium",
-    b: "Lv",
-    h: τ,
-    i: 298
+    name  : "Livermonium",
+    symbol: "Lv",
+    type  : "Post Transition Metal",
+    mass  : 298
   },
   117: {
-    a: "Tennessine",
-    b: "Ts",
-    h: σ,
-    i: 294
+    name  : "Tennessine",
+    symbol: "Ts",
+    type  : "Halogen",
+    mass  : 294
   },
   118: {
-    a: "Oganesson",
-    b: "Og",
-    h: β,
-    i: 294
+    name  : "Oganesson",
+    symbol: "Og",
+    type  : "Noble Gas",
+    mass  : 294
   },
 }
