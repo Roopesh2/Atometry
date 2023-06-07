@@ -5,8 +5,245 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atometry</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js"></script>
 </head>
-<body>
-  
-</body>
+  <body>
+    <!-- <div id="loader" >
+      <p class="txt" >Atometry</p>
+      <p class="txt" >An digital periodic table with latest data of all elements<br>I hope this digital periodic table will help you</p>
+      <div class="shell" >
+        <div class="proton1" >+</div>
+        <div class="neutron1" ></div>
+        <div class="neutron2" ></div>
+      </div>
+      <div class="electron" >-</div>
+      <button id="exploreTable" onclick="showView('periodicTable')">Explore Table</button>
+    </div> -->
+    <div id="periodicTable" >
+      <p id="i" onclick="showView('colorGuide')">i</p>
+      <table id="periodic_table" >
+        <tr>
+          <td onclick="info(1)"><div class="cell nonmetals"><sup class="atomic_number">1</sup><p class="symbol">H</p><p class="name">Hydrogen</p><p class="mass">1.0079</p></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td onclick="info(2)"><div class="cell noble_gas"><sup class="atomic_number">2</sup><p class="symbol">He</p><p class="name">Helium</p><p class="mass">4.00260</p></div></td>
+        </tr> 
+        <tr>
+          <td onclick="info(3)"><div class="cell alkali_metal"><sup class="atomic_number">3</sup><p class="symbol">Li</p><p class="name">Lithium</p><p class="mass">6.941</p></div></td>
+          <td onclick="info(4)"><div class="cell alkaline_earth"><sup class="atomic_number">4</sup><p class="symbol">Be</p><p class="name">Be</p><p class="mass">4.00260</p></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td onclick="info(5)"><div class="cell semimetals"><sup class="atomic_number">5</sup><p class="symbol">B</p><p class="name">Boron</p><p class="mass">10.811</p></div></td>
+          <td onclick="info(6)"><div class="cell nonmetals"><sup class="atomic_number">6</sup><p class="symbol">C</p><p class="name">Carbon</p><p class="mass">12.011</p></div></td>
+          <td onclick="info(7)"><div class="cell nonmetals"><sup class="atomic_number">7</sup><p class="symbol">N</p><p class="name">Nitrogen</p><p class="mass">14.00674</p></div></td>
+          <td onclick="info(8)"><div class="cell nonmetals"><sup class="atomic_number">8</sup><p class="symbol">O</p><p class="name">Oxygen</p><p class="mass">15.9993</p></div></td>
+          <td onclick="info(9)"><div class="cell halogens"><sup class="atomic_number">9</sup><p class="symbol">F</p><p class="name">Fluorine</p><p class="mass">18.998403</p></div></td>
+          <td onclick="info(10)"><div class="cell noble_gas"><sup class="atomic_number">10</sup><p class="symbol">Ne</p><p class="name">Neon</p><p class="mass">20.1797</p></div></td>
+        </tr>
+        <tr>
+          <td onclick="info(11)"><div class="cell alkali_metal"><sup class="atomic_number">11</sup><p class="symbol">Na</p><p class="name">Sodium</p><p class="mass">22.989768</p></div></td>
+          <td onclick="info(12)"><div class="cell alkaline_earth"><sup class="atomic_number">12</sup><p class="symbol">Mg</p><p class="name">Magnesium</p><p class="mass">24.305</p></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td onclick="info(13)"><div class="cell basic_metal"><sup class="atomic_number">13</sup><p class="symbol">Al</p><p class="name">Aluminum</p><p class="mass">26.981539</p></div></td>
+          <td onclick="info(14)"><div class="cell semimetals"><sup class="atomic_number">14</sup><p class="symbol">Si</p><p class="name">Silicon</p><p class="mass">28.0855</p></div></td>
+          <td onclick="info(15)"><div class="cell nonmetals"><sup class="atomic_number">15</sup><p class="symbol">P</p><p class="name">Phosphorus</p><p class="mass">30.973762</p></div></td>
+          <td onclick="info(16)"><div class="cell nonmetals"><sup class="atomic_number">16</sup><p class="symbol">S</p><p class="name">Sulphur</p><p class="mass">32.066</p></div></td>
+          <td onclick="info(17)"><div class="cell halogens"><sup class="atomic_number">17</sup><p class="symbol">Cl</p><p class="name">Chlorine</p><p class="mass">35.4527</p></div></td>
+          <td onclick="info(18)"><div class="cell noble_gas"><sup class="atomic_number">18</sup><p class="symbol">Ar</p><p class="name">Argon</p><p class="mass">39.948</p></div></td>
+        </tr>
+        <tr>
+          <td onclick="info(19)"><div class="cell alkali_metal"><sup class="atomic_number">19</sup><p class="symbol">K</p><p class="name">Potassium</p><p class="mass">39.0983</p></div></td>
+          <td onclick="info(20)"><div class="cell alkaline_earth"><sup class="atomic_number">20</sup><p class="symbol">Ca</p><p class="name">Calcium</p><p class="mass">40.078</p></div></td>
+          <td onclick="info(21)"><div class="cell transition_metal"><sup class="atomic_number">21</sup><p class="symbol">Sc</p><p class="name">Scandium</p><p class="mass">44.95591</p></div></td>
+          <td onclick="info(22)"><div class="cell transition_metal"><sup class="atomic_number">22</sup><p class="symbol">Ti</p><p class="name">Titanium</p><p class="mass">47.88</p></div></td>
+          <td onclick="info(23)"><div class="cell transition_metal"><sup class="atomic_number">23</sup><p class="symbol">V</p><p class="name">Vanadium</p><p class="mass">50.9415</p></div></td>
+          <td onclick="info(24)"><div class="cell transition_metal"><sup class="atomic_number">24</sup><p class="symbol">Cr</p><p class="name">Chromium</p><p class="mass">51.9961</p></div></td>
+          <td onclick="info(25)"><div class="cell transition_metal"><sup class="atomic_number">25</sup><p class="symbol">Mn</p><p class="name">Manganese</p><p class="mass">54.938</p></div></td>
+          <td onclick="info(26)"><div class="cell transition_metal"><sup class="atomic_number">26</sup><p class="symbol">Fe</p><p class="name">Iron</p><p class="mass">55.847</p></div></td>
+          <td onclick="info(27)"><div class="cell transition_metal"><sup class="atomic_number">27</sup><p class="symbol">Co</p><p class="name">Cobalt</p><p class="mass">58.9332</p></div></td>
+          <td onclick="info(28)"><div class="cell transition_metal"><sup class="atomic_number">28</sup><p class="symbol">Ni</p><p class="name">Nickel</p><p class="mass">58.6934</p></div></td>
+          <td onclick="info(29)"><div class="cell transition_metal"><sup class="atomic_number">29</sup><p class="symbol">Cu</p><p class="name">Copper</p><p class="mass">63.546</p></div></td>
+          <td onclick="info(30)"><div class="cell transition_metal"><sup class="atomic_number">30</sup><p class="symbol">Zn</p><p class="name">Zinc</p><p class="mass">65.29</p></div></td>
+          <td onclick="info(31)"><div class="cell basic_metal"><sup class="atomic_number">31</sup><p class="symbol">Ga</p><p class="name">Gallium</p><p class="mass">69.732</p></div></td>
+          <td onclick="info(32)"><div class="cell semimetals"><sup class="atomic_number">32</sup><p class="symbol">Ge</p><p class="name">Germanium</p><p class="mass">73.64</p></div></td>
+          <td onclick="info(33)"><div class="cell semimetals"><sup class="atomic_number">33</sup><p class="symbol">As</p><p class="name">Arsenic</p><p class="mass">74.92159</p></div></td>
+          <td onclick="info(34)"><div class="cell nonmetals"><sup class="atomic_number">34</sup><p class="symbol">Se</p><p class="name">Selenium</p><p class="mass">78.96</p></div></td>
+          <td onclick="info(35)"><div class="cell halogens"><sup class="atomic_number">35</sup><p class="symbol">Br</p><p class="name">Bromine</p><p class="mass">79.904</p></div></td>
+          <td onclick="info(36)"><div class="cell noble_gas"><sup class="atomic_number">36</sup><p class="symbol">Kr</p><p class="name">Krypton</p><p class="mass">83.80</p></div></td>
+        </tr>
+        <tr>
+          <td onclick="info(37)"><div class="cell alkali_metal"><sup class="atomic_number">37</sup><p class="symbol">Rb</p><p class="name">Rubidium</p><p class="mass">85.4678</p></div></td>
+          <td onclick="info(38)"><div class="cell alkaline_earth"><sup class="atomic_number">38</sup><p class="symbol">Sr</p><p class="name">Strontium</p><p class="mass">87.62</p></div></td>
+          <td onclick="info(39)"><div class="cell transition_metal"><sup class="atomic_number">39</sup><p class="symbol">Y</p><p class="name">Yttrium</p><p class="mass">88.90585</p></div></td>
+          <td onclick="info(40)"><div class="cell transition_metal"><sup class="atomic_number">40</sup><p class="symbol">Zr</p><p class="name">Zirconium</p><p class="mass">91.224</p></div></td>
+          <td onclick="info(41)"><div class="cell transition_metal"><sup class="atomic_number">41</sup><p class="symbol">Nb</p><p class="name">Niobium</p><p class="mass">92.90638</p></div></td>
+          <td onclick="info(42)"><div class="cell transition_metal"><sup class="atomic_number">42</sup><p class="symbol">Mo</p><p class="name">Molybdenum</p><p class="mass">95.94</p></div></td>
+          <td onclick="info(43)"><div class="cell transition_metal"><sup class="atomic_number">43</sup><p class="symbol">Tc</p><p class="name">Technetium</p><p class="mass">98.9072</p></div></td>
+          <td onclick="info(44)"><div class="cell transition_metal"><sup class="atomic_number">44</sup><p class="symbol">Ru</p><p class="name">Ruthenium</p><p class="mass">101.07</p></div></td>
+          <td onclick="info(45)"><div class="cell transition_metal"><sup class="atomic_number">45</sup><p class="symbol">Rh</p><p class="name">Rhodium</p><p class="mass">102.9055</p></div></td>
+          <td onclick="info(46)"><div class="cell transition_metal"><sup class="atomic_number">46</sup><p class="symbol">Pd</p><p class="name">Palladium</p><p class="mass">106.42</p></div></td>
+          <td onclick="info(47)"><div class="cell transition_metal"><sup class="atomic_number">47</sup><p class="symbol">Ag</p><p class="name">Silver</p><p class="mass">107.8682</p></div></td>
+          <td onclick="info(48)"><div class="cell transition_metal"><sup class="atomic_number">48</sup><p class="symbol">Cd</p><p class="name">Cadmium</p><p class="mass">112.411</p></div></td>
+          <td onclick="info(49)"><div class="cell basic_metal"><sup class="atomic_number">49</sup><p class="symbol">In</p><p class="name">Indium</p><p class="mass">114.818</p></div></td>
+          <td onclick="info(50)"><div class="cell basic_metal"><sup class="atomic_number">50</sup><p class="symbol">Sn</p><p class="name">Tin</p><p class="mass">118.71</p></div></td>
+          <td onclick="info(51)"><div class="cell semimetals"><sup class="atomic_number">51</sup><p class="symbol">Sb</p><p class="name">Antimony</p><p class="mass">121.760</p></div></td>
+          <td onclick="info(52)"><div class="cell semimetals"><sup class="atomic_number">52</sup><p class="symbol">Te</p><p class="name">Tellurium</p><p class="mass">127.6</p></div></td>
+          <td onclick="info(53)"><div class="cell halogens"><sup class="atomic_number">53</sup><p class="symbol">I</p><p class="name">Iodine</p><p class="mass">126.90447</p></div></td>
+          <td onclick="info(54)"><div class="cell noble_gas"><sup class="atomic_number">54</sup><p class="symbol">Xe</p><p class="name">Xenon</p><p class="mass">131.29</p></div></td>
+        </tr>
+        <tr>
+          <td onclick="info(55)"><div class="cell alkali_metal"><sup class="atomic_number">55</sup><p class="symbol">Cs</p><p class="name">Caesium</p><p class="mass">132.90543</p></div></td>
+          <td onclick="info(56)"><div class="cell alkaline_earth"><sup class="atomic_number">56</sup><p class="symbol">Ba</p><p class="name">Barium</p><p class="mass">137.327</p></div></td>
+          <td onclick="info(57)"><div class="cell lanthanides"><sup class="atomic_number">57</sup><p class="symbol">La</p><p class="name">Lanthanum</p><p class="mass">138.9055</p></div></td>
+          <td onclick="info(72)"><div class="cell transition_metal"><sup class="atomic_number">72</sup><p class="symbol">Hf</p><p class="name">Hafnium</p><p class="mass">178.49</p></div></td>
+          <td onclick="info(73)"><div class="cell transition_metal"><sup class="atomic_number">73</sup><p class="symbol">Ta</p><p class="name">Tantalum</p><p class="mass">180.9479</p></div></td>
+          <td onclick="info(74)"><div class="cell transition_metal"><sup class="atomic_number">74</sup><p class="symbol">W</p><p class="name">Tungsten</p><p class="mass">183.85</p></div></td>
+          <td onclick="info(75)"><div class="cell transition_metal"><sup class="atomic_number">75</sup><p class="symbol">Re</p><p class="name">Rhenium</p><p class="mass">186.207</p></div></td>
+          <td onclick="info(76)"><div class="cell transition_metal"><sup class="atomic_number">76</sup><p class="symbol">Os</p><p class="name">Osmium</p><p class="mass">190.23</p></div></td>
+          <td onclick="info(77)"><div class="cell transition_metal"><sup class="atomic_number">77</sup><p class="symbol">Ir</p><p class="name">Iridium</p><p class="mass">192.22</p></div></td>
+          <td onclick="info(78)"><div class="cell transition_metal"><sup class="atomic_number">78</sup><p class="symbol">Pt</p><p class="name">Platinum</p><p class="mass">185.08</p></div></td>
+          <td onclick="info(79)"><div class="cell transition_metal"><sup class="atomic_number">79</sup><p class="symbol">Au</p><p class="name">Gold</p><p class="mass">196.9665</p></div></td>
+          <td onclick="info(80)"><div class="cell transition_metal"><sup class="atomic_number">80</sup><p class="symbol">Hg</p><p class="name">Mercury</p><p class="mass">200.59</p></div></td>
+          <td onclick="info(81)"><div class="cell basic_metal"><sup class="atomic_number">81</sup><p class="symbol">Ti</p><p class="name">Thallium</p><p class="mass">204.3833</p></div></td>
+          <td onclick="info(82)"><div class="cell basic_metal"><sup class="atomic_number">82</sup><p class="symbol">Pb</p><p class="name">Lead</p><p class="mass">207.2</p></div></td>
+          <td onclick="info(83)"><div class="cell basic_metal"><sup class="atomic_number">83</sup><p class="symbol">Bi</p><p class="name">Bismuth</p><p class="mass">208.98037</p></div></td>
+          <td onclick="info(84)"><div class="cell semimetals"><sup class="atomic_number">84</sup><p class="symbol">Po</p><p class="name">Polonium</p><p class="mass">208.9824</p></div></td>
+          <td onclick="info(85)"><div class="cell halogens"><sup class="atomic_number">85</sup><p class="symbol">At</p><p class="name">Astatine</p><p class="mass">209.9871</p></div></td>
+          <td onclick="info(86)"><div class="cell noble_gas"><sup class="atomic_number">86</sup><p class="symbol">Rn</p><p class="name">Radon</p><p class="mass">222.0176</p></div></td>
+        </tr>
+        <tr>
+             <td onclick="info(87)"><div class="cell alkali_metal"><sup class="atomic_number">87</sup><p class="symbol">Fr</p><p class="name">Francium</p><p class="mass">223.0197</p></div></td>
+          <td onclick="info(88)"><div class="cell alkaline_earth"><sup class="atomic_number">88</sup><p class="symbol">Ra</p><p class="name">Radium</p><p class="mass">226.0254</p></div></td>
+          <td onclick="info(89)"><div class="cell actinlde"><sup class="atomic_number">89</sup><p class="symbol">Ac</p><p class="name">Actinium</p><p class="mass">227.0278</p></div></td>
+          <td onclick="info(104)"><div class="cell transition_metal"><sup class="atomic_number">104</sup><p class="symbol">Rf</p><p class="name">Rutherfordium</p><p class="mass">261</p></div></td>
+          <td onclick="info(105)"><div class="cell transition_metal"><sup class="atomic_number">105</sup><p class="symbol">Db</p><p class="name">Dubnium</p><p class="mass">262</p></div></td>
+          <td onclick="info(106)"><div class="cell transition_metal"><sup class="atomic_number">106</sup><p class="symbol">Sg</p><p class="name">Seaborgium</p><p class="mass">266</p></div></td>
+          <td onclick="info(107)"><div class="cell transition_metal"><sup class="atomic_number">107</sup><p class="symbol">Bh</p><p class="name">Bohrium</p><p class="mass">264</p></div></td>
+          <td onclick="info(108)"><div class="cell transition_metal"><sup class="atomic_number">108</sup><p class="symbol">Hs</p><p class="name">Hassium</p><p class="mass">269</p></div></td>
+          <td onclick="info(109)"><div class="cell transition_metal"><sup class="atomic_number">109</sup><p class="symbol">Mt</p><p class="name">Meltnerium</p><p class="mass">268</p></div></td>
+          <td onclick="info(110)"><div class="cell transition_metal"><sup class="atomic_number">110</sup><p class="symbol">Ds</p><p class="name">Darmstandtium</p><p class="mass">269</p></div></td>
+          <td onclick="info(111)"><div class="cell transition_metal"><sup class="atomic_number">111</sup><p class="symbol">Rg</p><p class="name">Roentgenlum</p><p class="mass">272</p></div></td>
+          <td onclick="info(112)"><div class="cell transition_metal"><sup class="atomic_number">112</sup><p class="symbol">Cn</p><p class="name">Copernicium</p><p class="mass">277</p></div></td>
+          <td onclick="info(113)"><div class="cell basic_metal"><sup class="atomic_number">113</sup><p class="symbol">Nh</p><p class="name">Nihonium</p><p class="mass">286</p></div></td>
+          <td onclick="info(114)"><div class="cell basic_metal"><sup class="atomic_number">114</sup><p class="symbol">Fl</p><p class="name">Flerovium</p><p class="mass">289</p></div></td>
+          <td onclick="info(115)"><div class="cell basic_metal"><sup class="atomic_number">115</sup><p class="symbol">Mc</p><p class="name">Moscovium</p><p class="mass">288</p></div></td>
+          <td onclick="info(116)"><div class="cell basic_metal"><sup class="atomic_number">116</sup><p class="symbol">Lv</p><p class="name">Livermonium</p><p class="mass">298</p></div></td>
+          <td onclick="info(117)"><div class="cell halogens"><sup class="atomic_number">117</sup><p class="symbol">Ts</p><p class="name">Tennessine</p><p class="mass">294</p></div></td>
+          <td onclick="info(118)"><div class="cell noble_gas"><sup class="atomic_number">118</sup><p class="symbol">Og</p><p class="name">Oganesson</p><p class="mass">294</p></div></td>
+        </tr>
+        <tr>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+          <td><div class="dist"></p></div></td>
+        </tr>
+        <tr>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td onclick="info(58)"><div class="cell lanthanides"><sup class="atomic_number">58</sup><p class="symbol">Ce</p><p class="name">Corium</p><p class="mass">140.115</p></div></td>
+          <td onclick="info(59)"><div class="cell lanthanides"><sup class="atomic_number">59</sup><p class="symbol">Pr</p><p class="name">Praseodymium</p><p class="mass">140.90785</p></div></td>
+          <td onclick="info(60)"><div class="cell lanthanides"><sup class="atomic_number">60</sup><p class="symbol">Nd</p><p class="name">Neodymium</p><p class="mass">144.24</p></div></td>
+          <td onclick="info(61)"><div class="cell lanthanides"><sup class="atomic_number">61</sup><p class="symbol">Pm</p><p class="name">Promethium</p><p class="mass">144.9127</p></div></td>
+          <td onclick="info(62)"><div class="cell lanthanides"><sup class="atomic_number">62</sup><p class="symbol">Sm</p><p class="name">Samarium</p><p class="mass">150.36</p></div></td>
+          <td onclick="info(63)"><div class="cell lanthanides"><sup class="atomic_number">63</sup><p class="symbol">Eu</p><p class="name">Europium</p><p class="mass">151.9655</p></div></td>
+          <td onclick="info(64)"><div class="cell lanthanides"><sup class="atomic_number">64</sup><p class="symbol">Gd</p><p class="name">Gadolinium</p><p class="mass">157.25</p></div></td>
+          <td onclick="info(65)"><div class="cell lanthanides"><sup class="atomic_number">65</sup><p class="symbol">Tb</p><p class="name">Terbium</p><p class="mass">158.92534</p></div></td>
+          <td onclick="info(66)"><div class="cell lanthanides"><sup class="atomic_number">66</sup><p class="symbol">Dy</p><p class="name">Dysprosium</p><p class="mass">162.50</p></div></td>
+          <td onclick="info(67)"><div class="cell lanthanides"><sup class="atomic_number">67</sup><p class="symbol">Ho</p><p class="name">Holmium</p><p class="mass">164.93421</p></div></td>
+          <td onclick="info(68)"><div class="cell lanthanides"><sup class="atomic_number">68</sup><p class="symbol">Er</p><p class="name">Erbium</p><p class="mass">167.26</p></div></td>
+          <td onclick="info(69)"><div class="cell lanthanides"><sup class="atomic_number">69</sup><p class="symbol">Tm</p><p class="name">Thulium</p><p class="mass">168.93421</p></div></td>
+          <td onclick="info(70)"><div class="cell lanthanides"><sup class="atomic_number">70</sup><p class="symbol">Yb</p><p class="name">Ytterbium</p><p class="mass">173.04</p></div></td>
+          <td onclick="info(71)"><div class="cell lanthanides"><sup class="atomic_number">71</sup><p class="symbol">Lu</p><p class="name">Lutetium</p><p class="mass">174.967</p></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+        </tr>
+        <tr>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+          <td onclick="info(90)"><div class="cell actinlde"><sup class="atomic_number">90</sup><p class="symbol">Th</p><p class="name">Thorium</p><p class="mass">232.0381</p></div></td>
+          <td onclick="info(91)"><div class="cell actinlde"><sup class="atomic_number">91</sup><p class="symbol">Pa</p><p class="name">Protactinium</p><p class="mass">231.03588</p></div></td>
+          <td onclick="info(92)"><div class="cell actinlde"><sup class="atomic_number">92</sup><p class="symbol">U</p><p class="name">Uranium</p><p class="mass">238.0289</p></div></td>
+          <td onclick="info(93)"><div class="cell actinlde"><sup class="atomic_number">93</sup><p class="symbol">Np</p><p class="name">Neptunium</p><p class="mass">243.0614</p></div></td>
+          <td onclick="info(94)"><div class="cell actinlde"><sup class="atomic_number">94</sup><p class="symbol">Pu</p><p class="name">Plutonium</p><p class="mass">247.0703</p></div></td>
+          <td onclick="info(95)"><div class="cell actinlde"><sup class="atomic_number">95</sup><p class="symbol">Am</p><p class="name">Americium</p><p class="mass">243.0614</p></div></td>
+          <td onclick="info(96)"><div class="cell actinlde"><sup class="atomic_number">96</sup><p class="symbol">Cm</p><p class="name">Curium</p><p class="mass">247.0703</p></div></td>
+          <td onclick="info(97)"><div class="cell actinlde"><sup class="atomic_number">97</sup><p class="symbol">Bk</p><p class="name">Berkelium</p><p class="mass">247.0703</p></div></td>
+          <td onclick="info(98)"><div class="cell actinlde"><sup class="atomic_number">98</sup><p class="symbol">Cf</p><p class="name">Californium</p><p class="mass">251.0796</p></div></td>
+          <td onclick="info(99)"><div class="cell actinlde"><sup class="atomic_number">99</sup><p class="symbol">Es</p><p class="name">Einsteinium</p><p class="mass">254</p></div></td>
+          <td onclick="info(100)"><div class="cell actinlde"><sup class="atomic_number">100</sup><p class="symbol">Fm</p><p class="name">Fermium</p><p class="mass">257.0951</p></div></td>
+          <td onclick="info(101)"><div class="cell actinlde"><sup class="atomic_number">101</sup><p class="symbol">Md</p><p class="name">Mendelevium</p><p class="mass">258.1</p></div></td>
+          <td onclick="info(102)"><div class="cell actinlde"><sup class="atomic_number">102</sup><p class="symbol">No</p><p class="name">Nobelium</p><p class="mass">259.1009</p></div></td>
+          <td onclick="info(103)"><div class="cell actinlde"><sup class="atomic_number">103</sup><p class="symbol">Lr</p><p class="name">Lawrencium</p><p class="mass">262</p></div></td>
+          <td><div class="empty"></div></td>
+          <td><div class="empty"></div></td>
+        </tr>
+      </table>
+    </div>
+    <div id="elementData" >
+      <button id="backbtn" align="left" onclick="showView('periodicTable')">&lt;– Go to Table</button>
+      <p id="in" >Database of Elements are still building</p>
+    </div>
+    <div id="colorGuide">
+      <button id="backbtn" align="left" onclick="showView('periodicTable')">&lt;– Go to Table</button>
+      <p>Colores Represents</p>
+      <center><div class="d nonmetals">Nonmetals</div></center>
+      <center><div class="d semimetals">Semimetals</div></center>
+      <center><div class="d noble_gas" style="width:200px;height:60px;font-size:20px;padding-top:30px">Noble Gas</div></center>
+      <center><div class="d alkali_metal" style="width:200px;height:60px;font-size:20px;padding-top:30px">Alkali Metals</div></center>
+      <center><div class="d alkaline_earth">Alkaline Earth</div></center>
+      <center><div class="d basic_metal">Basic Metals</div></center>
+      <center><div class="d halogens">Halogens</div></center>
+      <center><div class="d transition_metal">Transition Metals</div></center>
+      <center><div class="d lanthanides">Lanthanides</div></center>
+       <center><div class="d actinlde">Actinlde</div></center>
+       
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

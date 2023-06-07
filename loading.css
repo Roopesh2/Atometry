@@ -1,0 +1,75 @@
+.shell {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    background-color: transparent;
+    border: 3px solid #000;
+    margin-left: 26px;
+    margin-top: 50px;
+    border-radius: 50%;
+    padding: 0px;
+    display: flex;
+  }
+  .proton1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ed2301;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    margin-left: 117px;
+    margin-top: 102px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 0;
+  }
+  .neutron1 {
+    width: 30px;
+    height: 30px;
+    background-color: #659087;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    margin-left: 107.25px;
+    margin-top: 132px;
+    text-align: center;
+    font-size: 25px;
+    z-index: -1;
+  }
+  .neutron2 {
+    width: 30px;
+    height: 30px;
+    background-color: #659087;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    margin-left: -1px;
+    margin-top: 124px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .electron {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #0120df;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 205px;
+    margin-top: 49px;
+  }
+  .txt:nth-child(1) {
+    font-size: 40px;
+    margin-bottom: -6px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #45ac56;
+  }
+  .txt:nth-child(2) {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    text-align: center;
+    color: #da822d;
+  }

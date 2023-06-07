@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #00eced;
+  font-family: sans-serif;
+}
+#i {
+  cursor: pointer;
+  font-size: 18px;
+  margin: 7px;
+  border: 2px solid #095cff;
+  width: 32px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 800;
+  color: #095cff;
+  padding-top: 7px;
+}
+#elementData,
+#colorGuide {
+  display: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+  empty-cells: hide;
+}
+td {
+  padding: 0px;
+  margin: 0px;
+}
+.cell {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+  border: 0.25px solid #ffffff;
+}
+.dist {
+  width: 60px;
+  height: 20px;
+  margin: 0px;
+}
+.atomic_number {
+  font-size: 11px;
+  font-weight: bolder;
+  padding: 0px;
+  margin-left: 1px;
+}
+.symbol {
+  margin-top: -13px;
+  margin-bottom: -3px;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.name,
+.mass {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.mass {
+  font-size: 10px;
+}
+.name {
+  font-size: 8.7px;
+}
+.nonmetals {
+  background: -webkit-linear-gradient(135deg, #1159ff, #11eaff);
+}
+.noble_gas {
+  background: -webkit-linear-gradient(135deg, #ffad00, #ffff00);
+}
+.alkali_metal {
+  background: -webkit-linear-gradient(135deg, #ff0067, #ff00cd);
+}
+.alkaline_earth {
+  background: -webkit-linear-gradient(135deg, #bb0078, #ff0056);
+}
+.semimetals {
+  background: -webkit-linear-gradient(135deg, #91aa45, #11ee90);
+}
+.halogens {
+  background: -webkit-linear-gradient(135deg, #ffdd00, #ffffdf);
+}
+.basic_metal {
+  background: -webkit-linear-gradient(135deg, #ffad00, #ffffdf);
+}
+.transition_metal {
+  background: -webkit-linear-gradient(135deg, #11eaff, #ffffdf);
+}
+.lanthanides {
+  background: -webkit-linear-gradient(135deg, #19ee56, #48ffa6);
+}
+.actinlde {
+  background: -webkit-linear-gradient(135deg, #cc0000, #ff00ff);
+}
+
+div {
+  text-align: center;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.d {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  padding-top: 30px;
+}
+exploreTable {
+  margin-top: 330px;
+  width: 100px;
+  height: 30px;
+  background-color: #fc8a03;
+}
+#backbtn {
+  cursor: pointer;
+  border: 2px solid #753235;
+  width: 110px;
+  height: 25px;
+  border-radius: 10px;
+  padding-top: 5px;
+  background-color: transparent;
+  vertical-align: middle;
+}

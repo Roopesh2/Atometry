@@ -20,7 +20,7 @@ var properties = [
  *   ...
  * }
  */
-var Data = {
+window.Data = {
   1: {
     name  : "Hydrogen",
     symbol: "H",

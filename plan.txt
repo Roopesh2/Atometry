@@ -1,0 +1,10 @@
+## mvp
+ * table -> (onclick_cell) -> page_data
+ * mvp data: everything in data.JS
+ * responsiveness
+
+## next
+ * more data
+ * firebase upload
+ * loading screen
+ * color schemes
