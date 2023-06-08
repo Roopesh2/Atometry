@@ -1,58 +1,46 @@
-Appearance	colorless gas
-Standard atomic weight Ar°(H)
-	
-
-    [1.00784, 1.00811]
-    1.0080±0.0002 (abridged)[1]
-
-Neutronium ← hydrogen → helium
-Atomic number (Z)	1
-Group	group 1: hydrogen and alkali metals
-Period	period 1
-Block	  s-block
-Electron configuration	1s1
-Electrons per shell	1
+          Appearance    = colorless gas
+Standard  atomic weight = 1.0080±0.0002
+Atomic    number (Z)    = 1
+          Group         = group 1? hydrogen and alkali metals
+          Period        = period 1
+          Block         = s-block
+Electron  configuration = 1s1
+Electrons per shell     = 1
 Physical properties
-Phase at STP	gas
-Melting point	(H2) 13.99 K ​(−259.16 °C, ​−434.49 °F)
-Boiling point	(H2) 20.271 K ​(−252.879 °C, ​−423.182 °F)
-Density (at STP)	0.08988 g/L
-when liquid (at m.p.)	0.07 g/cm3 (solid: 0.0763 g/cm3)[2]
-when liquid (at b.p.)	0.07099 g/cm3
-Triple point	13.8033 K, ​7.041 kPa
-Critical point	32.938 K, 1.2858 MPa
-Heat of fusion	(H2) 0.117 kJ/mol
-Heat of vaporization	(H2) 0.904 kJ/mol
-Molar heat capacity	(H2) 28.836 J/(mol·K)
-Vapor pressure
-P (Pa) 	1 	10 	100 	1 k 	10 k 	100 k
-at T (K) 					15 	20
+
+Phase    at STP           = gas
+Melting  point            = (H2) 13.99 K ​(−259.16 °C, ​−434.49 °F)
+Boiling  point            = (H2) 20.271 K ​(−252.879 °C, ​−423.182 °F)
+Density  (at STP)         = 0.08988 g/L
+when     liquid (at m.p.) = 0.07 g/cm3 (solid? 0.0763 g/cm3)[2]
+when     liquid (at b.p.) = 0.07099 g/cm3
+Triple   point            = 13.8033 K, ​7.041 kPa
+Critical point            = 32.938 K,  1.2858 MPa
+Heat     of fusion        = (H2) 0.117 kJ/mol
+Heat     of vaporization  = (H2) 0.904 kJ/mol
+Molar    heat capacity    = (H2) 28.836 J/(mol·K)
+
 Atomic properties
-Oxidation states	−1, +1 (an amphoteric oxide)
-Electronegativity	Pauling scale: 2.20
-Ionization energies	
 
-    1st: 1312.0 kJ/mol
+Oxidation  states            = −1, +1 (an amphoteric oxide)
+           Electronegativity = Pauling scale? 2.20
+Ionization energies          = 1st? 1312.0 kJ/mol
+Covalent   radius            = 31±5 pm
+Van        der Waals radius  = 120 pm
 
-Covalent radius	31±5 pm
-Van der Waals radius	120 pm
-Color lines in a spectral range
 Spectral lines of hydrogen
+
 Other properties
-Natural occurrence	primordial
-Crystal structure	​hexagonal
-Hexagonal crystal structure for hydrogen
-Speed of sound	1310 m/s (gas, 27 °C)
-Thermal conductivity	0.1805 W/(m⋅K)
-Magnetic ordering	diamagnetic[3]
-Molar magnetic susceptibility	−3.98×10−6 cm3/mol (298 K)[4]
-CAS Number	12385-13-6
-1333-74-0 (H2)
+
+Natural  occurrence              = primordial
+Crystal  structure               = ​hexagonal
+Speed    of sound                = 1310 m/s (gas, 27 °C)
+Thermal  conductivity            = 0.1805 W/(m⋅K)
+Magnetic ordering                = diamagnetic[3]
+Molar    magnetic susceptibility = −3.98×10−6 cm3/mol (298 K)[4]
+CAS      Number                  = 12385-13-6, 1333-74-0 (H2)
+
 History
-Discovery	Henry Cavendish[5][6] (1766)
-Named by	Antoine Lavoisier[7] (1783)
+      Discovery = Henry Cavendish[5][6] (1766)
+Named by        = Antoine Lavoisier[7] (1783)
 Isotopes of hydrogen
-
-    ve
-
-Main isotopes 	Decay
